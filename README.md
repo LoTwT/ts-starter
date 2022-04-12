@@ -16,6 +16,8 @@ A starter template for TypeScript library.
 
 ## alternative plugins
 
+You can choose one or some of following plugins to install to this repo:
+
 - [defu](https://github.com/unjs/defu) - Assign default properties, recursively.
 - [untyped](https://github.com/unjs/untyped) - Generate types and markdown from a config object.
 - [consola](https://github.com/unjs/consola) - Elegant Console Logger for Node.js and Browser
