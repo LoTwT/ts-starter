@@ -1,0 +1,66 @@
+{
+  "name": "{{name}}",
+  "version": "0.0.0",
+  "packageManager": "pnpm@6.32.6",
+  "description": "",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*",
+        "./dist/index.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "dev": "unbuild --stub",
+    "build": "rimraf dist && unbuild",
+    "prettier": "prettier --write .",
+    "prepublishOnly": "pnpm build",
+    "release": "bumpp --commit --push --tag && pnpm publish",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LoTwT/{{name}}.git"
+  },
+  "keywords": [],
+  "author": "LoTwT <709937065@qq.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LoTwT/{{name}}/issues"
+  },
+  "homepage": "https://github.com/LoTwT/{{name}}#readme",
+  "devDependencies": {
+    "@types/node": "^17.0.23",
+    "bumpp": "^7.1.1",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.7",
+    "pnpm": "^6.32.6",
+    "prettier": "^2.6.2",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.6.3",
+    "unbuild": "^0.7.2",
+    "unplugin-auto-import": "^0.7.0",
+    "vitest": "^0.9.3"
+  },
+  "lint-staged": {
+    "*.{js,ts,json,md}": [
+      "prettier --write"
+    ]
+  }
+}
