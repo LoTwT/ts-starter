@@ -32,7 +32,8 @@
     "prepublishOnly": "pnpm build",
     "release": "bumpp --commit --push --tag && pnpm publish",
     "typecheck": "tsc --noEmit",
-    "test": "vitest"
+    "test": "vitest",
+    "postinstall": "husky install"
   },
   "repository": {
     "type": "git",
@@ -46,7 +47,7 @@
   },
   "homepage": "https://github.com/LoTwT/{{name}}#readme",
   "devDependencies": {
-    "@types/node": "^17.0.24",
+    "@types/node": "^17.0.25",
     "bumpp": "^7.1.1",
     "husky": "^7.0.4",
     "lint-staged": "^12.3.8",
