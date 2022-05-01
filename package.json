@@ -1,7 +1,7 @@
 {
   "name": "{{name}}",
   "version": "0.0.0",
-  "packageManager": "pnpm@6.32.8",
+  "packageManager": "pnpm@7.0.0",
   "description": "",
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
@@ -47,17 +47,17 @@
   },
   "homepage": "https://github.com/LoTwT/{{name}}#readme",
   "devDependencies": {
-    "@types/node": "^17.0.25",
+    "@types/node": "^17.0.30",
     "bumpp": "^7.1.1",
     "husky": "^7.0.4",
-    "lint-staged": "^12.3.8",
-    "pnpm": "^6.32.8",
+    "lint-staged": "^12.4.1",
+    "pnpm": "^7.0.0",
     "prettier": "^2.6.2",
     "rimraf": "^3.0.2",
-    "typescript": "^4.6.3",
+    "typescript": "^4.6.4",
     "unbuild": "^0.7.4",
     "unplugin-auto-import": "^0.7.1",
-    "vitest": "^0.9.3"
+    "vitest": "^0.10.0"
   },
   "lint-staged": {
     "*.{js,ts,json,md}": [
