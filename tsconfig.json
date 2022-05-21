@@ -10,6 +10,10 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
-    "types": ["vitest/globals", "vitest/importMeta"]
+    "types": ["vitest/globals", "vitest/importMeta"],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
   }
 }

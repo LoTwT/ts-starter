@@ -1,1 +1,1 @@
-console.log("ts-starter")
+export const one = 1

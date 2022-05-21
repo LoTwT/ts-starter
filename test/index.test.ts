@@ -1,5 +1,7 @@
+import { one } from "@/index"
+
 describe("ts-starter", () => {
-  it("should be 1", () => {
-    expect(1).toBe(1)
+  it("happy path", () => {
+    expect(one).toBe(1)
   })
 })
