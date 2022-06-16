@@ -11,3 +11,4 @@ node_modules
 temp
 
 auto-imports.d.ts
+pnpm-lock.yaml
