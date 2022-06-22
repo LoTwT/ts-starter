@@ -48,17 +48,17 @@
   },
   "homepage": "https://github.com/LoTwT/{{name}}#readme",
   "devDependencies": {
-    "@types/node": "^17.0.44",
-    "bumpp": "^7.2.0",
+    "@types/node": "^18.0.0",
+    "bumpp": "^8.2.1",
     "husky": "^8.0.1",
-    "lint-staged": "^13.0.1",
-    "pnpm": "^7.2.1",
-    "prettier": "^2.7.0",
+    "lint-staged": "^13.0.2",
+    "pnpm": "^7.3.0",
+    "prettier": "^2.7.1",
     "rimraf": "^3.0.2",
-    "typescript": "^4.7.3",
+    "typescript": "^4.7.4",
     "unbuild": "^0.7.4",
     "unplugin-auto-import": "^0.8.8",
-    "vitest": "^0.15.1"
+    "vitest": "^0.15.2"
   },
   "lint-staged": {
     "*.{js,ts,json,md,yml,yaml}": [
