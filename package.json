@@ -1,5 +1,5 @@
 {
-  "name": "pkgName",
+  "name": "pkg-name",
   "version": "0.0.0",
   "packageManager": "pnpm@7.2.1",
   "description": "",
@@ -37,15 +37,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LoTwT/pkgName.git"
+    "url": "git+https://github.com/LoTwT/pkg-name.git"
   },
   "keywords": [],
   "author": "LoTwT <709937065@qq.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/LoTwT/pkgName/issues"
+    "url": "https://github.com/LoTwT/pkg-name/issues"
   },
-  "homepage": "https://github.com/LoTwT/pkgName#readme",
+  "homepage": "https://github.com/LoTwT/pkg-name#readme",
   "devDependencies": {
     "@types/node": "^18.0.0",
     "bumpp": "^8.2.1",
