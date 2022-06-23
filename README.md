@@ -1,6 +1,6 @@
-# {{name}}
+# pkg-name
 
-A starter template for TypeScript library.
+A starter template for TypeScript library with Github Actions.
 
 ## builtin plugins
 
@@ -9,7 +9,7 @@ A starter template for TypeScript library.
 - [vitest](https://github.com/vitest-dev/vitest) - test framwork
 - [unplugin-auto-import](https://github.com/antfu/unplugin-auto-import) - auto import vitest
   <br />
-- [husky](https://github.com/typicode/husky)
+- [simple-git-hooks](https://github.com/toplenboren/simple-git-hooks)
 - [prettier](https://github.com/prettier/prettier)
 - [lint-staged](https://github.com/okonet/lint-staged)
 - [bumpp](https://github.com/antfu/bumpp) - packge version control
@@ -25,7 +25,7 @@ You can choose one or some of following plugins to install to this repo:
 
 ## use
 
-Please replace `{{name}}` to your target package name, change author and repo infos to yours in `package.json`. Also replace the copyright in `LICENSE`.
+Please replace `pkg-name` to your target package name, change author and repo infos to yours in `package.json`. Also replace the copyright in `LICENSE`.
 
 ## License
 
