@@ -4,7 +4,7 @@ specifiers:
   '@types/node': ^18.0.0
   bumpp: ^8.2.1
   lint-staged: ^13.0.3
-  pnpm: ^7.4.1
+  pnpm: ^7.5.0
   prettier: ^2.7.1
   simple-git-hooks: ^2.8.0
   typescript: ^4.7.4
@@ -16,7 +16,7 @@ devDependencies:
   '@types/node': 18.0.0
   bumpp: 8.2.1
   lint-staged: 13.0.3
-  pnpm: 7.4.1
+  pnpm: 7.5.0
   prettier: 2.7.1
   simple-git-hooks: 2.8.0
   typescript: 4.7.4
@@ -1692,8 +1692,8 @@ packages:
       pathe: 0.3.2
     dev: true
 
-  /pnpm/7.4.1:
-    resolution: {integrity: sha512-zbgCWWw/qN5cvG1cBTNxwtT625BjxiZO974CAetIial/om4tyVgCmPxq9FRKDrYffTTLfahIXfXOjMUYqQ8wZw==}
+  /pnpm/7.5.0:
+    resolution: {integrity: sha512-sb9wJNyx/d8l3Gze2jI1y8BGNbb/ga+JT3SrGNiH+C5KbtZ4wmgePBWGjaiGugcpT9+vQ5MO//+QlVWhMCpedQ==}
     engines: {node: '>=14.6'}
     hasBin: true
     dev: true
