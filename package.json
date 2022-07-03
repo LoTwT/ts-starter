@@ -33,7 +33,8 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest",
     "prepublishOnly": "pnpm build",
-    "release": "bumpp && npm publish"
+    "release": "bumpp && npm publish",
+    "prepare": "simple-git-hooks"
   },
   "repository": {
     "type": "git",
