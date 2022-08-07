@@ -1,7 +1,7 @@
 {
   "name": "pkg-name",
   "version": "0.0.0",
-  "packageManager": "pnpm@7.8.0",
+  "packageManager": "pnpm@7.9.0",
   "description": "",
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
@@ -48,16 +48,16 @@
   },
   "homepage": "https://github.com/LoTwT/pkg-name#readme",
   "devDependencies": {
-    "@types/node": "^18.6.3",
+    "@types/node": "^18.6.4",
     "bumpp": "^8.2.1",
     "lint-staged": "^13.0.3",
-    "pnpm": "^7.8.0",
+    "pnpm": "^7.9.0",
     "prettier": "^2.7.1",
     "simple-git-hooks": "^2.8.0",
     "typescript": "^4.7.4",
     "unbuild": "^0.7.6",
-    "unplugin-auto-import": "^0.10.3",
-    "vitest": "^0.20.3"
+    "unplugin-auto-import": "^0.11.1",
+    "vitest": "^0.21.0"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm exec lint-staged"
