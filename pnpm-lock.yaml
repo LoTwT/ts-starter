@@ -1,26 +1,26 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@types/node': ^18.7.18
+  '@types/node': ^18.7.23
   bumpp: ^8.2.1
   lint-staged: ^13.0.3
-  pnpm: ^7.12.1
+  pnpm: ^7.12.2
   prettier: ^2.7.1
   simple-git-hooks: ^2.8.0
-  taze: ^0.8.1
+  taze: ^0.8.2
   tsup: ^6.2.3
   typescript: ^4.8.3
   unplugin-auto-import: ^0.11.2
   vitest: ^0.23.4
 
 devDependencies:
-  '@types/node': 18.7.18
+  '@types/node': 18.7.23
   bumpp: 8.2.1
   lint-staged: 13.0.3
-  pnpm: 7.12.1
+  pnpm: 7.12.2
   prettier: 2.7.1
   simple-git-hooks: 2.8.0
-  taze: 0.8.1
+  taze: 0.8.2
   tsup: 6.2.3_typescript@4.8.3
   typescript: 4.8.3
   unplugin-auto-import: 0.11.2
@@ -172,8 +172,8 @@ packages:
     resolution: {integrity: sha512-hC7OMnszpxhZPduX+m+nrx+uFoLkWOMiR4oa/AZF3MuSETYTZmFfJAHqZEM8MVlvfG7BEUcgvtwoCTxBp6hm3g==}
     dev: true
 
-  /@types/node/18.7.18:
-    resolution: {integrity: sha512-m+6nTEOadJZuTPkKR/SYK3A2d7FZrgElol9UP1Kae90VVU4a6mxnPuLiIW1m4Cq4gZ/nWb9GrdVXJCoCazDAbg==}
+  /@types/node/18.7.23:
+    resolution: {integrity: sha512-DWNcCHolDq0ZKGizjx2DZjR/PqsYwAcYUJmfMWqtVU2MBMG5Mo+xFZrhGId5r/O5HOuMPyQEcM6KUBp5lBZZBg==}
     dev: true
 
   /abbrev/1.1.1:
@@ -1949,8 +1949,8 @@ packages:
       pathe: 0.3.5
     dev: true
 
-  /pnpm/7.12.1:
-    resolution: {integrity: sha512-kk60T3TKXutcEnpUNAlJBpG+PzVdYZ3e/g4eivgvmWsY4H3R/8c/nVWTS5Ji/NCPfzO2oUudkN5AyCd0eTKODQ==}
+  /pnpm/7.12.2:
+    resolution: {integrity: sha512-8QvnKANKN+YZXDmVYGI7zRJysdKldZI+w3AYnxu9IwtnLv1x6WuzrJr0nxMcTeuUAT908RjDqK+/6KJB9wNqxA==}
     engines: {node: '>=14.6'}
     hasBin: true
     dev: true
@@ -2373,8 +2373,8 @@ packages:
       yallist: 4.0.0
     dev: true
 
-  /taze/0.8.1:
-    resolution: {integrity: sha512-W2ZOGYiH57GFM38gBVE1pMV3TDExuqwqETdWh8xGeAOMMWwSUt6NWZnHw7c1AMhaC8abCikjXe1s2H43h5CieA==}
+  /taze/0.8.2:
+    resolution: {integrity: sha512-ADay3jM3XYgyhu8zEcv64ETpGZ3Oi2uiyxfrDfMi4sTf5znu4Zn+ytK67YLMtvRNzwn9palM7TT5xYBQxJdvwA==}
     hasBin: true
     dependencies:
       '@antfu/ni': 0.18.0
@@ -2654,7 +2654,7 @@ packages:
     dependencies:
       '@types/chai': 4.3.3
       '@types/chai-subset': 1.3.3
-      '@types/node': 18.7.18
+      '@types/node': 18.7.23
       chai: 4.3.6
       debug: 4.3.4
       local-pkg: 0.4.2
