@@ -1,7 +1,7 @@
 {
   "name": "pkg-name",
   "version": "0.0.0",
-  "packageManager": "pnpm@7.12.2",
+  "packageManager": "pnpm@7.13.0",
   "description": "pkg-name",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -49,10 +49,10 @@
   },
   "homepage": "https://github.com/LoTwT/pkg-name#readme",
   "devDependencies": {
-    "@types/node": "^18.7.23",
+    "@types/node": "^18.8.0",
     "bumpp": "^8.2.1",
     "lint-staged": "^13.0.3",
-    "pnpm": "^7.12.2",
+    "pnpm": "^7.13.0",
     "prettier": "^2.7.1",
     "simple-git-hooks": "^2.8.0",
     "taze": "^0.8.2",
