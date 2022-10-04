@@ -49,10 +49,10 @@
   },
   "homepage": "https://github.com/LoTwT/pkg-name#readme",
   "devDependencies": {
-    "@types/node": "^18.8.0",
+    "@types/node": "^18.8.2",
     "bumpp": "^8.2.1",
     "lint-staged": "^13.0.3",
-    "pnpm": "^7.13.0",
+    "pnpm": "^7.13.1",
     "prettier": "^2.7.1",
     "simple-git-hooks": "^2.8.0",
     "taze": "^0.8.2",
