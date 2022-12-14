@@ -49,17 +49,17 @@
   },
   "homepage": "https://github.com/LoTwT/pkg-name#readme",
   "devDependencies": {
-    "@types/node": "^18.11.9",
+    "@types/node": "^18.11.15",
     "bumpp": "^8.2.1",
-    "lint-staged": "^13.0.4",
-    "pnpm": "^7.17.1",
-    "prettier": "^2.8.0",
+    "lint-staged": "^13.1.0",
+    "pnpm": "^7.18.2",
+    "prettier": "^2.8.1",
     "simple-git-hooks": "^2.8.1",
     "taze": "^0.8.4",
     "tsup": "^6.5.0",
-    "typescript": "^4.9.3",
-    "unplugin-auto-import": "^0.12.0",
-    "vitest": "^0.25.3"
+    "typescript": "^4.9.4",
+    "unplugin-auto-import": "^0.12.1",
+    "vitest": "^0.25.8"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm exec lint-staged"
