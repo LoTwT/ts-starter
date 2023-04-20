@@ -1,7 +1,7 @@
 {
   "name": "pkg-name",
   "version": "0.0.0",
-  "packageManager": "pnpm@7.26.2",
+  "packageManager": "pnpm@8.3.1",
   "description": "pkg-name",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -49,17 +49,17 @@
   },
   "homepage": "https://github.com/LoTwT/pkg-name#readme",
   "devDependencies": {
-    "@types/node": "^18.11.18",
-    "bumpp": "^8.2.1",
-    "lint-staged": "^13.1.0",
-    "pnpm": "^7.26.2",
-    "prettier": "^2.8.3",
+    "@types/node": "^18.15.12",
+    "bumpp": "^9.1.0",
+    "lint-staged": "^13.2.1",
+    "pnpm": "^8.3.1",
+    "prettier": "^2.8.7",
     "simple-git-hooks": "^2.8.1",
-    "taze": "^0.8.5",
-    "tsup": "^6.5.0",
-    "typescript": "^4.9.4",
-    "unplugin-auto-import": "^0.12.2",
-    "vitest": "^0.28.3"
+    "taze": "^0.9.1",
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.4",
+    "unplugin-auto-import": "^0.15.3",
+    "vitest": "^0.30.1"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm exec lint-staged"
