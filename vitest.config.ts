@@ -1,6 +1,6 @@
+import { URL, fileURLToPath } from "node:url"
 import { defineConfig } from "vitest/config"
 import AutoImport from "unplugin-auto-import/vite"
-import { fileURLToPath, URL } from "url"
 
 export default defineConfig({
   plugins: [

@@ -3,16 +3,28 @@
   "version": "0.0.0",
   "packageManager": "pnpm@8.5.1",
   "description": "pkg-name",
+  "author": "LoTwT <l709937065@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/LoTwT/pkg-name#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LoTwT/pkg-name.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LoTwT/pkg-name/issues"
+  },
+  "keywords": [],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    }
+  },
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
-  "exports": {
-    ".": {
-      "require": "./dist/index.js",
-      "import": "./dist/index.mjs",
-      "types": "./dist/index.d.ts"
-    }
-  },
   "typesVersions": {
     "*": {
       "*": [
@@ -24,11 +36,11 @@
   "files": [
     "dist"
   ],
-  "sideEffects": false,
   "scripts": {
     "watch": "tsup --watch",
     "build": "tsup",
-    "lint": "prettier -c .",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
     "prettier": "prettier --write .",
     "typecheck": "tsc --noEmit",
     "test": "vitest",
@@ -37,20 +49,11 @@
     "prepare": "simple-git-hooks",
     "up": "taze latest -I"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/LoTwT/pkg-name.git"
-  },
-  "keywords": [],
-  "author": "LoTwT <l709937065@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/LoTwT/pkg-name/issues"
-  },
-  "homepage": "https://github.com/LoTwT/pkg-name#readme",
   "devDependencies": {
+    "@ayingott/eslint-config": "^0.2.1",
     "@types/node": "^20.2.3",
     "bumpp": "^9.1.0",
+    "eslint": "^8.41.0",
     "lint-staged": "^13.2.2",
     "pnpm": "^8.5.1",
     "prettier": "^2.8.8",
@@ -65,8 +68,9 @@
     "pre-commit": "pnpm exec lint-staged"
   },
   "lint-staged": {
-    "*": [
-      "prettier --write --ignore-unknown"
-    ]
+    "*": "eslint --fix"
+  },
+  "eslintConfig": {
+    "extends": "@ayingott/eslint-config"
   }
 }
