@@ -6,8 +6,8 @@ settings:
 
 devDependencies:
   '@ayingott/eslint-config':
-    specifier: ^0.2.2
-    version: 0.2.2(eslint@8.41.0)(typescript@5.0.4)
+    specifier: ^0.2.3
+    version: 0.2.3(eslint@8.41.0)(typescript@5.0.4)
   '@types/node':
     specifier: ^20.2.5
     version: 20.2.5
@@ -128,8 +128,8 @@ packages:
     resolution: {integrity: sha512-vy9fM3pIxZmX07dL+VX1aZe7ynZ+YyB0jY+jE6r3hOK6GNY2t6W8rzpFC4tgpbXUYABkFQwgJq2XYXlxbXAI0g==}
     dev: true
 
-  /@ayingott/eslint-config@0.2.2(eslint@8.41.0)(typescript@5.0.4):
-    resolution: {integrity: sha512-6kjKFgqLye/fAfVDGbfBKJ1fmqEqDcbFTh9ivHoxyzRiY0c8hjpcHFsoJDspZ36cfqIYyx3MHLSQ1gL7k2c/ww==}
+  /@ayingott/eslint-config@0.2.3(eslint@8.41.0)(typescript@5.0.4):
+    resolution: {integrity: sha512-v3vhZWwjkPFJU77aYJ504PmpV5EzA6YOlHgjczZt3eknnvGDaXKye15F+LiEA9TCe1ih0zOjxT31Gug0jqWTiA==}
     peerDependencies:
       eslint: '>=7.4.0'
     dependencies:
