@@ -1,8 +1,9 @@
 {
   "name": "pkg-name",
   "version": "0.0.0",
-  "packageManager": "pnpm@8.6.12",
   "description": "pkg-name",
+  "type": "module",
+  "packageManager": "pnpm@8.6.12",
   "author": "LoTwT <l709937065@gmail.com>",
   "license": "MIT",
   "homepage": "https://github.com/LoTwT/pkg-name#readme",
@@ -49,10 +50,10 @@
     "up": "taze latest -I"
   },
   "devDependencies": {
-    "@ayingott/eslint-config": "^0.2.7",
+    "@ayingott/eslint-config": "^0.4.0",
     "@types/node": "^20.5.6",
     "bumpp": "^9.2.0",
-    "eslint": "^8.47.0",
+    "eslint": "^8.48.0",
     "lint-staged": "^14.0.1",
     "pnpm": "^8.6.12",
     "prettier": "^3.0.2",
