@@ -8,6 +8,9 @@ devDependencies:
   '@ayingott/eslint-config':
     specifier: ^0.4.0
     version: 0.4.0(eslint@8.48.0)(typescript@5.2.2)
+  '@ayingott/prettier-config':
+    specifier: ^0.1.0
+    version: 0.1.0
   '@types/node':
     specifier: ^20.5.7
     version: 20.5.7
@@ -157,6 +160,12 @@ packages:
       - eslint-import-resolver-webpack
       - supports-color
       - typescript
+    dev: true
+
+  /@ayingott/prettier-config@0.1.0:
+    resolution: {integrity: sha512-X7nDWJ+55oTQUd7iBjkV0GfCdYCB7czLb7HAa3J0bVJBQYBCb73xas3NXeIlPPHJXmOlOetJcl2O8SN58nYQDA==}
+    dependencies:
+      '@sxzz/prettier-config': 1.0.4
     dev: true
 
   /@babel/code-frame@7.21.4:
@@ -691,6 +700,10 @@ packages:
       - eslint-import-resolver-webpack
       - supports-color
       - typescript
+    dev: true
+
+  /@sxzz/prettier-config@1.0.4:
+    resolution: {integrity: sha512-KqgPNwMYloKI+LGAW8LwS0hEJHgwnrIJjgQC0B/saoDJZKUIrqc+lLme/lobrzBetPNhrCuhSDELRrZTg32l0w==}
     dev: true
 
   /@tootallnate/once@2.0.0:
