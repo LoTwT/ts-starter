@@ -45,7 +45,7 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest",
     "prepublishOnly": "pnpm build",
-    "release": "bumpp && npm publish",
+    "release": "bumpp && pnpm publish",
     "prepare": "simple-git-hooks",
     "up": "taze latest -I"
   },
