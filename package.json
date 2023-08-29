@@ -68,6 +68,9 @@
     "pre-commit": "pnpm exec lint-staged"
   },
   "lint-staged": {
-    "*": "eslint --fix"
+    "*": [
+      "prettier --write --ignore-unknown",
+      "eslint --fix"
+    ]
   }
 }
