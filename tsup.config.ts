@@ -3,7 +3,10 @@ import { defineConfig } from "tsup"
 export default defineConfig({
   entry: ["./src/index.ts"],
   format: ["esm", "cjs"],
-  clean: true,
   target: "esnext",
+  clean: true,
   dts: true,
+  splitting: true,
+  cjsInterop: true,
+  platform: "neutral",
 })
