@@ -50,11 +50,11 @@
     "up": "taze latest -I"
   },
   "devDependencies": {
-    "@ayingott/eslint-config": "^0.5.4",
+    "@ayingott/eslint-config": "^0.6.0",
     "@ayingott/prettier-config": "^0.1.1",
-    "@types/node": "^20.5.9",
+    "@types/node": "^20.6.0",
     "bumpp": "^9.2.0",
-    "eslint": "^8.48.0",
+    "eslint": "^8.49.0",
     "lint-staged": "^14.0.1",
     "pnpm": "^8.7.4",
     "prettier": "^3.0.3",
@@ -63,7 +63,7 @@
     "tsup": "^7.2.0",
     "typescript": "^5.2.2",
     "unplugin-auto-import": "^0.16.6",
-    "vitest": "^0.34.3"
+    "vitest": "^0.34.4"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm exec lint-staged"
