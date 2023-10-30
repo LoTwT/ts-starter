@@ -2,17 +2,17 @@
   "compilerOptions": {
     "target": "esnext",
     "lib": ["esnext", "dom"],
+    "baseUrl": ".",
     "module": "esnext",
     "moduleResolution": "node",
-    "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
     },
-    "types": ["vitest/globals"],
     "resolveJsonModule": true,
-    "esModuleInterop": true,
+    "types": ["vitest/globals"],
     "strict": true,
     "strictNullChecks": true,
+    "esModuleInterop": true,
     "skipLibCheck": true
   }
 }
