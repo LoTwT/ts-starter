@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "pkg-name",
   "type": "module",
-  "packageManager": "pnpm@8.12.0",
+  "packageManager": "pnpm@8.12.1",
   "author": "LoTwT <l709937065@gmail.com>",
   "license": "MIT",
   "homepage": "https://github.com/LoTwT/pkg-name#readme",
@@ -52,18 +52,18 @@
   "devDependencies": {
     "@ayingott/eslint-config": "^0.7.5",
     "@ayingott/prettier-config": "^0.1.2",
-    "@types/node": "^20.10.4",
+    "@types/node": "^20.10.5",
     "bumpp": "^9.2.1",
-    "eslint": "^8.55.0",
+    "eslint": "^8.56.0",
     "lint-staged": "^15.2.0",
-    "pnpm": "^8.12.0",
+    "pnpm": "^8.12.1",
     "prettier": "^3.1.1",
     "simple-git-hooks": "^2.9.0",
     "taze": "^0.13.0",
     "tsup": "^8.0.1",
     "typescript": "^5.3.3",
     "unplugin-auto-import": "^0.17.2",
-    "vitest": "^1.0.4"
+    "vitest": "^1.1.0"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm exec lint-staged"
