@@ -9,8 +9,8 @@ devDependencies:
     specifier: ^0.8.0
     version: 0.8.0(@typescript-eslint/parser@7.0.2)(eslint@8.56.0)(typescript@5.3.3)
   '@ayingott/prettier-config':
-    specifier: ^0.1.7
-    version: 0.1.7
+    specifier: ^0.2.0
+    version: 0.2.0
   '@types/node':
     specifier: ^20.11.19
     version: 20.11.19
@@ -190,8 +190,8 @@ packages:
       - typescript
     dev: true
 
-  /@ayingott/prettier-config@0.1.7:
-    resolution: {integrity: sha512-AoLj+4xDCK6wXbdswDB2ePxoA3zLquOUSgVX1UbUh0tym7OekovDV3gJGwggSMXu+ksH2/24VOl7+xrDCRJWew==}
+  /@ayingott/prettier-config@0.2.0:
+    resolution: {integrity: sha512-KpWhRSQroPo7G2kqB3d+Srqjsh1mute7vkS0sBHMbVDWimmh46GsSNPv89Uar4eVK3WahTgIWVgOPzNcLqHsng==}
     dependencies:
       '@sxzz/prettier-config': 2.0.0
     dev: true
