@@ -5,7 +5,7 @@ export default defineConfig({
   format: ["esm", "cjs"],
   target: "esnext",
   clean: true,
+  cjsInterop: true,
   dts: true,
   splitting: true,
-  cjsInterop: true,
 })

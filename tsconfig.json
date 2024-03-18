@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
     "target": "esnext",
-    "lib": ["esnext", "dom"],
+    "lib": ["esnext"],
+    "moduleDetection": "force",
     "baseUrl": ".",
     "module": "esnext",
     "moduleResolution": "node",
@@ -12,7 +13,10 @@
     "types": ["vitest/globals"],
     "strict": true,
     "strictNullChecks": true,
+    "noUnusedLocals": true,
     "esModuleInterop": true,
+    "isolatedModules": true,
+    "skipDefaultLibCheck": true,
     "skipLibCheck": true
   }
 }
