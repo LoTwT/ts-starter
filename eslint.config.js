@@ -1,5 +1,8 @@
 // @ts-check
 
-import { defineFlatConfig } from "@ayingott/eslint-config"
+import { defineConfig } from "@ayingott/eslint-config"
 
-export default defineFlatConfig()
+export default defineConfig({
+  typescript: true,
+  formatters: true,
+})
