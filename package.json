@@ -49,8 +49,8 @@
     "watch": "tsup --watch"
   },
   "devDependencies": {
-    "@ayingott/eslint-config": "^1.1.0",
-    "@ayingott/prettier-config": "^1.1.0",
+    "@ayingott/eslint-config": "^1.4.0",
+    "@ayingott/prettier-config": "^1.2.0",
     "@types/node": "^20.12.12",
     "bumpp": "^9.4.1",
     "eslint": "^9.3.0",
