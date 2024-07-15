@@ -17,9 +17,9 @@
     "noUnusedParameters": true,
     "declaration": true,
     "esModuleInterop": true,
+    "isolatedDeclarations": true,
     "isolatedModules": true,
     "skipDefaultLibCheck": true,
-    "skipLibCheck": true,
-    "isolatedDeclarations": true
+    "skipLibCheck": true
   }
 }
