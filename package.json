@@ -35,6 +35,7 @@
   ],
   "scripts": {
     "build": "tsup",
+    "dev": "tsup --watch",
     "lint": "eslint .",
     "prepare": "simple-git-hooks",
     "prepublishOnly": "pnpm build",
@@ -42,8 +43,7 @@
     "release": "bumpp && pnpm publish",
     "test": "vitest",
     "typecheck": "tsc --noEmit",
-    "up": "taze latest -I -f",
-    "watch": "tsup --watch"
+    "up": "taze latest -I -f"
   },
   "devDependencies": {
     "@ayingott/eslint-config": "^1.4.10",
