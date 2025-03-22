@@ -2,7 +2,7 @@
   "name": "pkg-name",
   "type": "module",
   "version": "0.0.0",
-  "packageManager": "pnpm@10.5.2",
+  "packageManager": "pnpm@10.6.5",
   "description": "pkg-name",
   "author": "LoTwT <l709937065@gmail.com>",
   "license": "MIT",
@@ -46,19 +46,19 @@
     "up": "taze latest -I -f"
   },
   "devDependencies": {
-    "@ayingott/eslint-config": "^2.0.0",
-    "@ayingott/prettier-config": "^2.0.0",
-    "@types/node": "^22.13.5",
-    "bumpp": "^10.0.3",
-    "eslint": "^9.21.0",
-    "lint-staged": "^15.4.3",
-    "prettier": "^3.5.2",
-    "simple-git-hooks": "^2.11.1",
-    "taze": "^18.6.0",
-    "tsdown": "^0.6.0",
-    "typescript": "^5.7.3",
-    "unplugin-auto-import": "^19.1.0",
-    "vitest": "^3.0.7"
+    "@ayingott/eslint-config": "^2.0.1",
+    "@ayingott/prettier-config": "^2.1.2",
+    "@types/node": "^22.13.11",
+    "bumpp": "^10.1.0",
+    "eslint": "^9.23.0",
+    "lint-staged": "^15.5.0",
+    "prettier": "^3.5.3",
+    "simple-git-hooks": "^2.12.1",
+    "taze": "^19.0.2",
+    "tsdown": "^0.6.9",
+    "typescript": "^5.8.2",
+    "unplugin-auto-import": "^19.1.1",
+    "vitest": "^3.0.9"
   },
   "pnpm": {
     "ignoredBuiltDependencies": [
