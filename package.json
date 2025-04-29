@@ -2,7 +2,7 @@
   "name": "pkg-name",
   "type": "module",
   "version": "0.0.0",
-  "packageManager": "pnpm@10.8.1",
+  "packageManager": "pnpm@10.10.0",
   "description": "pkg-name",
   "author": "LoTwT <l709937065@gmail.com>",
   "license": "MIT",
@@ -46,27 +46,19 @@
     "up": "taze latest -I -f"
   },
   "devDependencies": {
-    "@ayingott/eslint-config": "^2.0.1",
-    "@ayingott/prettier-config": "^2.1.2",
-    "@types/node": "^22.14.1",
-    "bumpp": "^10.1.0",
-    "eslint": "^9.24.0",
-    "lint-staged": "^15.5.1",
-    "prettier": "^3.5.3",
-    "simple-git-hooks": "^2.12.1",
-    "taze": "^19.0.4",
-    "tsdown": "^0.8.0",
-    "typescript": "^5.8.3",
-    "unplugin-auto-import": "^19.1.2",
-    "vitest": "^3.1.1"
-  },
-  "pnpm": {
-    "ignoredBuiltDependencies": [
-      "esbuild"
-    ],
-    "onlyBuiltDependencies": [
-      "simple-git-hooks"
-    ]
+    "@ayingott/eslint-config": "catalog:",
+    "@ayingott/prettier-config": "catalog:",
+    "@types/node": "catalog:",
+    "bumpp": "catalog:",
+    "eslint": "catalog:",
+    "lint-staged": "catalog:",
+    "prettier": "catalog:",
+    "simple-git-hooks": "catalog:",
+    "taze": "catalog:",
+    "tsdown": "catalog:",
+    "typescript": "catalog:",
+    "unplugin-auto-import": "catalog:",
+    "vitest": "catalog:"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm exec lint-staged"
