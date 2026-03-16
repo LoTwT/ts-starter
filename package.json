@@ -2,7 +2,7 @@
   "name": "pkg-name",
   "type": "module",
   "version": "0.0.0",
-  "packageManager": "pnpm@10.24.0",
+  "packageManager": "pnpm@10.32.1",
   "description": "pkg-name",
   "author": "LoTwT <l709937065@gmail.com>",
   "license": "MIT",
@@ -46,19 +46,19 @@
     "up": "taze latest -I -f"
   },
   "devDependencies": {
-    "@ayingott/eslint-config": "^2.0.7",
-    "@ayingott/prettier-config": "^2.1.8",
-    "@types/node": "^24.10.1",
-    "bumpp": "^10.3.2",
-    "eslint": "^9.39.1",
-    "lint-staged": "^16.2.7",
-    "prettier": "^3.7.4",
+    "@ayingott/eslint-config": "^2.1.0",
+    "@ayingott/prettier-config": "^2.1.10",
+    "@types/node": "^25.5.0",
+    "bumpp": "^11.0.1",
+    "eslint": "^9.39.4",
+    "lint-staged": "^16.4.0",
+    "prettier": "^3.8.1",
     "simple-git-hooks": "^2.13.1",
-    "taze": "^19.9.2",
-    "tsdown": "^0.17.0-beta.6",
+    "taze": "^19.10.0",
+    "tsdown": "^0.21.3",
     "typescript": "^5.9.3",
-    "unplugin-auto-import": "^20.3.0",
-    "vitest": "^4.0.15"
+    "unplugin-auto-import": "^21.0.0",
+    "vitest": "^4.1.0"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm exec lint-staged"
