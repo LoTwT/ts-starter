@@ -10,7 +10,8 @@ A starter template for TypeScript library with Github Actions.
 - [unplugin-auto-import](https://github.com/antfu/unplugin-auto-import) - auto import vitest
   <br />
 - [simple-git-hooks](https://github.com/toplenboren/simple-git-hooks)
-- [prettier](https://github.com/prettier/prettier)
+- [oxlint](https://github.com/oxc-project/oxc) - linter
+- [oxfmt](https://github.com/oxc-project/oxc) - formatter
 - [lint-staged](https://github.com/okonet/lint-staged)
 - [bumpp](https://github.com/antfu/bumpp) - packge version control
 

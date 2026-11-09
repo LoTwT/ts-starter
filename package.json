@@ -1,24 +1,23 @@
 {
   "name": "pkg-name",
-  "type": "module",
   "version": "0.0.0",
-  "packageManager": "pnpm@10.32.1",
   "description": "pkg-name",
-  "author": "LoTwT <l709937065@gmail.com>",
-  "license": "MIT",
+  "keywords": [],
   "homepage": "https://github.com/LoTwT/pkg-name#readme",
+  "bugs": {
+    "url": "https://github.com/LoTwT/pkg-name/issues"
+  },
+  "license": "MIT",
+  "author": "LoTwT <l709937065@gmail.com>",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/LoTwT/pkg-name.git"
   },
-  "bugs": {
-    "url": "https://github.com/LoTwT/pkg-name/issues"
-  },
-  "keywords": [],
+  "files": [
+    "dist"
+  ],
+  "type": "module",
   "sideEffects": false,
-  "exports": {
-    ".": "./dist/index.mjs"
-  },
   "main": "./dist/index.mjs",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.mts",
@@ -30,29 +29,28 @@
       ]
     }
   },
-  "files": [
-    "dist"
-  ],
+  "exports": {
+    ".": "./dist/index.mjs"
+  },
   "scripts": {
     "build": "tsdown",
     "dev": "tsdown --watch",
-    "lint": "eslint .",
+    "format": "oxfmt",
+    "lint": "oxlint --type-aware --report-unused-disable-directives-severity=error && oxfmt --check",
     "prepare": "simple-git-hooks",
     "prepublishOnly": "pnpm build",
-    "prettier": "prettier --write .",
     "release": "bumpp && pnpm publish",
     "test": "vitest",
     "typecheck": "tsc --noEmit",
     "up": "taze latest -I -f"
   },
   "devDependencies": {
-    "@ayingott/eslint-config": "^2.1.0",
-    "@ayingott/prettier-config": "^2.1.10",
     "@types/node": "^25.5.0",
     "bumpp": "^11.0.1",
-    "eslint": "^9.39.4",
     "lint-staged": "^16.4.0",
-    "prettier": "^3.8.1",
+    "oxfmt": "^0.78.0",
+    "oxlint": "^1.93.0",
+    "oxlint-tsgolint": "^7.0.2006",
     "simple-git-hooks": "^2.13.1",
     "taze": "^19.10.0",
     "tsdown": "^0.21.3",
@@ -65,9 +63,9 @@
   },
   "lint-staged": {
     "*": [
-      "eslint --fix",
-      "prettier --write --ignore-unknown"
+      "oxlint --type-aware --fix --no-error-on-unmatched-pattern",
+      "oxfmt --no-error-on-unmatched-pattern"
     ]
   },
-  "prettier": "@ayingott/prettier-config"
+  "packageManager": "pnpm@10.32.1"
 }
