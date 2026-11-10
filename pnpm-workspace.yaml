@@ -4,3 +4,6 @@ trustPolicy: no-downgrade
 
 allowBuilds:
   simple-git-hooks: true
+
+skills:
+  dirs: []
