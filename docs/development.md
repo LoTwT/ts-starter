@@ -32,6 +32,7 @@
 
 ## 依赖升级
 
+- 用 `pnpm deps`（taze）升级依赖，不要用 `pnpm up`：后者是 pnpm 内置 `update` 的别名，不会运行 taze。
 - 大版本升级前先查阅 release notes 中的 breaking changes，升级后运行全部检查。
 - pnpm 默认拒绝发布不满 24 小时的版本（`minimumReleaseAge`）。遇到时改用更早的版本或稍后再升级；未经确认，不在 `pnpm-workspace.yaml` 中添加例外。
 - `@types/node` 的主版本与 `engines` 中的最低 Node 版本保持一致。
