@@ -1,31 +1,42 @@
 # pkg-name
 
-A starter template for TypeScript library with Github Actions.
+A starter template for pure ESM TypeScript libraries.
 
-## builtin plugins
+## Stack
 
-- [pnpm](https://github.com/pnpm/pnpm) - expected packageManager
-- [unbuild](https://github.com/unjs/unbuild) - bundler
-- [vitest](https://github.com/vitest-dev/vitest) - test framwork
-- [unplugin-auto-import](https://github.com/antfu/unplugin-auto-import) - auto import vitest
-  <br />
-- [simple-git-hooks](https://github.com/toplenboren/simple-git-hooks)
-- [prettier](https://github.com/prettier/prettier)
-- [lint-staged](https://github.com/okonet/lint-staged)
-- [bumpp](https://github.com/antfu/bumpp) - packge version control
+- [pnpm](https://pnpm.io) - package manager
+- [tsdown](https://tsdown.dev) - bundler; generates `exports` and runs publint and attw on build
+- [Vitest](https://vitest.dev) - test framework
+- [oxlint](https://oxc.rs/docs/guide/usage/linter) - type-aware linter
+- [oxfmt](https://oxc.rs/docs/guide/usage/formatter) - formatter
+- [simple-git-hooks](https://github.com/toplenboren/simple-git-hooks) - pre-commit checks
+- [bumpp](https://github.com/antfu-collective/bumpp) - version bump and release
+- [taze](https://github.com/antfu-collective/taze) - dependency updates
 
-## alternative plugins
+## Requirements
 
-You can choose one or some of following plugins to install to this repo:
+- Node.js 26 or later
+- pnpm (version pinned in `packageManager`)
 
-- [defu](https://github.com/unjs/defu) - Assign default properties, recursively.
-- [untyped](https://github.com/unjs/untyped) - Generate types and markdown from a config object.
-- [consola](https://github.com/unjs/consola) - Elegant Console Logger for Node.js and Browser
-- [zx](https://github.com/google/zx) - A tool for writing better scripts
+## Usage
 
-## use
+1. Replace `pkg-name` and the author in `package.json`.
+2. Update the copyright holder in `LICENSE`.
+3. Run `pnpm install`.
 
-Please replace `pkg-name` to your target package name, change author and repo infos to yours in `package.json`. Also replace the copyright in `LICENSE`.
+## Scripts
+
+| Script              | Description                            |
+| ------------------- | -------------------------------------- |
+| `pnpm dev`          | Build in watch mode                    |
+| `pnpm build`        | Build to `dist/` and check the package |
+| `pnpm test`         | Run tests                              |
+| `pnpm lint`         | Lint with oxlint                       |
+| `pnpm format`       | Format with oxfmt                      |
+| `pnpm format:check` | Check formatting without writing       |
+| `pnpm typecheck`    | Type-check with tsc                    |
+| `pnpm release`      | Bump the version, tag, and publish     |
+| `pnpm deps`         | Update dependencies interactively      |
 
 ## License
 

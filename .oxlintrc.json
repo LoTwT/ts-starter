@@ -1,0 +1,20 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["typescript", "unicorn", "oxc", "import", "vitest"],
+  "options": { "typeAware": true, "reportUnusedDisableDirectives": "error" },
+  "categories": { "correctness": "error" },
+  "rules": {
+    "array-callback-return": "error",
+    "eqeqeq": ["error", "smart"],
+    "no-console": ["error", { "allow": ["warn", "error"] }],
+    "no-empty": "error",
+    "no-throw-literal": "error",
+    "prefer-const": "error",
+    "import/no-duplicates": "error",
+    "typescript/ban-ts-comment": "error",
+    "typescript/consistent-type-imports": "error",
+    "typescript/no-explicit-any": "error",
+    "typescript/no-non-null-assertion": "error",
+    "typescript/no-require-imports": "error"
+  }
+}

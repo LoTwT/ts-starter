@@ -2,9 +2,8 @@ shellEmulator: true
 
 trustPolicy: no-downgrade
 
-ignoredBuiltDependencies:
-  - esbuild
+allowBuilds:
+  simple-git-hooks: true
 
-onlyBuiltDependencies:
-  - simple-git-hooks
-  - unrs-resolver
+skills:
+  dirs: []

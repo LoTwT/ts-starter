@@ -3,22 +3,19 @@
     "target": "esnext",
     "lib": ["esnext"],
     "moduleDetection": "force",
-    "module": "esnext",
     "moduleResolution": "bundler",
-    "paths": {
-      "@/*": ["./src/*"]
-    },
-    "resolveJsonModule": true,
-    "types": ["vitest/globals"],
-    "strict": true,
+    "types": ["node"],
     "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noUncheckedIndexedAccess": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "declaration": true,
-    "esModuleInterop": true,
+    "erasableSyntaxOnly": true,
     "isolatedDeclarations": true,
     "isolatedModules": true,
-    "skipDefaultLibCheck": true,
+    "verbatimModuleSyntax": true,
     "skipLibCheck": true
   },
   "include": ["src", "tests"]

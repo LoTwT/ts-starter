@@ -1,73 +1,69 @@
 {
   "name": "pkg-name",
-  "type": "module",
   "version": "0.0.0",
-  "packageManager": "pnpm@10.32.1",
   "description": "pkg-name",
-  "author": "LoTwT <l709937065@gmail.com>",
-  "license": "MIT",
+  "keywords": [],
   "homepage": "https://github.com/LoTwT/pkg-name#readme",
+  "bugs": {
+    "url": "https://github.com/LoTwT/pkg-name/issues"
+  },
+  "license": "MIT",
+  "author": "LoTwT <l709937065@gmail.com>",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/LoTwT/pkg-name.git"
   },
-  "bugs": {
-    "url": "https://github.com/LoTwT/pkg-name/issues"
-  },
-  "keywords": [],
-  "sideEffects": false,
-  "exports": {
-    ".": "./dist/index.mjs"
-  },
-  "main": "./dist/index.mjs",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.mts",
-  "typesVersions": {
-    "*": {
-      "*": [
-        "./dist/*",
-        "./*"
-      ]
-    }
-  },
   "files": [
     "dist"
   ],
+  "type": "module",
+  "sideEffects": false,
+  "imports": {
+    "#/*": "./src/*.ts"
+  },
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./package.json": "./package.json"
+  },
   "scripts": {
     "build": "tsdown",
+    "deps": "taze latest -I -f",
     "dev": "tsdown --watch",
-    "lint": "eslint .",
+    "format": "oxfmt",
+    "format:check": "oxfmt --check",
+    "lint": "oxlint",
     "prepare": "simple-git-hooks",
     "prepublishOnly": "pnpm build",
-    "prettier": "prettier --write .",
     "release": "bumpp && pnpm publish",
     "test": "vitest",
-    "typecheck": "tsc --noEmit",
-    "up": "taze latest -I -f"
+    "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "@ayingott/eslint-config": "^2.1.0",
-    "@ayingott/prettier-config": "^2.1.10",
-    "@types/node": "^25.5.0",
-    "bumpp": "^11.0.1",
-    "eslint": "^9.39.4",
-    "lint-staged": "^16.4.0",
-    "prettier": "^3.8.1",
-    "simple-git-hooks": "^2.13.1",
-    "taze": "^19.10.0",
-    "tsdown": "^0.21.3",
-    "typescript": "^5.9.3",
-    "unplugin-auto-import": "^21.0.0",
-    "vitest": "^4.1.0"
+    "@arethetypeswrong/core": "^0.18.5",
+    "@types/node": "^26.6.6",
+    "bumpp": "^12.3.0",
+    "oxfmt": "^0.77.0",
+    "oxlint": "^1.92.0",
+    "oxlint-tsgolint": "^7.0.2006",
+    "publint": "^0.3.25",
+    "simple-git-hooks": "^2.14.0",
+    "taze": "^21.3.0",
+    "tsdown": "^0.23.7",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.0"
   },
   "simple-git-hooks": {
-    "pre-commit": "pnpm exec lint-staged"
+    "pre-commit": "pnpm lint && pnpm format:check && pnpm typecheck"
   },
-  "lint-staged": {
-    "*": [
-      "eslint --fix",
-      "prettier --write --ignore-unknown"
-    ]
+  "tsdown": {
+    "attw": {
+      "level": "error"
+    },
+    "exports": true,
+    "publint": true
   },
-  "prettier": "@ayingott/prettier-config"
+  "engines": {
+    "node": ">=26.0.0"
+  },
+  "packageManager": "pnpm@12.18.0"
 }
