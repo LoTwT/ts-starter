@@ -18,6 +18,9 @@
   ],
   "type": "module",
   "sideEffects": false,
+  "imports": {
+    "#/*": "./src/*.ts"
+  },
   "exports": {
     ".": "./dist/index.mjs",
     "./package.json": "./package.json"
