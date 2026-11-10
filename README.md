@@ -1,6 +1,6 @@
 # pkg-name
 
-A starter template for TypeScript library with Github Actions.
+A starter template for TypeScript libraries.
 
 ## builtin plugins
 
