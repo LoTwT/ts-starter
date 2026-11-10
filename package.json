@@ -55,7 +55,6 @@
     "taze": "^19.10.0",
     "tsdown": "^0.21.3",
     "typescript": "^5.9.3",
-    "unplugin-auto-import": "^21.0.0",
     "vitest": "^4.1.0"
   },
   "simple-git-hooks": {

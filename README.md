@@ -7,7 +7,6 @@ A starter template for TypeScript libraries.
 - [pnpm](https://github.com/pnpm/pnpm) - expected packageManager
 - [unbuild](https://github.com/unjs/unbuild) - bundler
 - [vitest](https://github.com/vitest-dev/vitest) - test framwork
-- [unplugin-auto-import](https://github.com/antfu/unplugin-auto-import) - auto import vitest
   <br />
 - [simple-git-hooks](https://github.com/toplenboren/simple-git-hooks)
 - [oxlint](https://github.com/oxc-project/oxc) - linter
