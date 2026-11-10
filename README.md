@@ -11,7 +11,6 @@ A starter template for TypeScript libraries.
 - [simple-git-hooks](https://github.com/toplenboren/simple-git-hooks)
 - [oxlint](https://github.com/oxc-project/oxc) - linter
 - [oxfmt](https://github.com/oxc-project/oxc) - formatter
-- [lint-staged](https://github.com/okonet/lint-staged)
 - [bumpp](https://github.com/antfu/bumpp) - packge version control
 
 ## alternative plugins

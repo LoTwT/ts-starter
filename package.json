@@ -36,7 +36,8 @@
     "build": "tsdown",
     "dev": "tsdown --watch",
     "format": "oxfmt",
-    "lint": "oxlint --type-aware --report-unused-disable-directives-severity=error && oxfmt --check",
+    "format:check": "oxfmt --check",
+    "lint": "oxlint --type-aware --report-unused-disable-directives-severity=error",
     "prepare": "simple-git-hooks",
     "prepublishOnly": "pnpm build",
     "release": "bumpp && pnpm publish",
@@ -47,7 +48,6 @@
   "devDependencies": {
     "@types/node": "^26.6.6",
     "bumpp": "^12.3.0",
-    "lint-staged": "^17.6.0",
     "oxfmt": "^0.77.0",
     "oxlint": "^1.92.0",
     "oxlint-tsgolint": "^7.0.2006",
@@ -58,13 +58,7 @@
     "vitest": "^5.1.0"
   },
   "simple-git-hooks": {
-    "pre-commit": "pnpm exec lint-staged"
-  },
-  "lint-staged": {
-    "*": [
-      "oxlint --type-aware --fix --no-error-on-unmatched-pattern",
-      "oxfmt --no-error-on-unmatched-pattern"
-    ]
+    "pre-commit": "pnpm lint && pnpm format:check && pnpm typecheck"
   },
   "packageManager": "pnpm@12.18.0"
 }
