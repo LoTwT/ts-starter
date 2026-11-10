@@ -26,16 +26,17 @@ A starter template for pure ESM TypeScript libraries.
 
 ## Scripts
 
-| Script           | Description                            |
-| ---------------- | -------------------------------------- |
-| `pnpm dev`       | Build in watch mode                    |
-| `pnpm build`     | Build to `dist/` and check the package |
-| `pnpm test`      | Run tests                              |
-| `pnpm lint`      | Lint with oxlint                       |
-| `pnpm format`    | Format with oxfmt                      |
-| `pnpm typecheck` | Type-check with tsc                    |
-| `pnpm release`   | Bump the version, tag, and publish     |
-| `pnpm up`        | Update dependencies interactively      |
+| Script              | Description                            |
+| ------------------- | -------------------------------------- |
+| `pnpm dev`          | Build in watch mode                    |
+| `pnpm build`        | Build to `dist/` and check the package |
+| `pnpm test`         | Run tests                              |
+| `pnpm lint`         | Lint with oxlint                       |
+| `pnpm format`       | Format with oxfmt                      |
+| `pnpm format:check` | Check formatting without writing       |
+| `pnpm typecheck`    | Type-check with tsc                    |
+| `pnpm release`      | Bump the version, tag, and publish     |
+| `pnpm deps`         | Update dependencies interactively      |
 
 ## License
 

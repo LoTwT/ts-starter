@@ -27,16 +27,16 @@
   },
   "scripts": {
     "build": "tsdown",
+    "deps": "taze latest -I -f",
     "dev": "tsdown --watch",
     "format": "oxfmt",
     "format:check": "oxfmt --check",
-    "lint": "oxlint --type-aware --report-unused-disable-directives-severity=error",
+    "lint": "oxlint",
     "prepare": "simple-git-hooks",
     "prepublishOnly": "pnpm build",
     "release": "bumpp && pnpm publish",
     "test": "vitest",
-    "typecheck": "tsc --noEmit",
-    "up": "taze latest -I -f"
+    "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
     "@arethetypeswrong/core": "^0.18.5",
